@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 namespace formSub.Models
 {
@@ -13,6 +14,12 @@ namespace formSub.Models
         public string LastName {get;set;}
 
         [Required]
+        [DataType(DataType.Date)]
+        [FutureDate]
+        [Display(Name="Date of Birth")]
+        public string Birthday {get;set;}
+
+        [Required]
         [Range(0, 100)]
         public int Age {get;set;}
 
@@ -24,5 +31,19 @@ namespace formSub.Models
         [DataType(DataType.Password)]
         [MinLength(8)]
         public string Password {get;set;}
+    }
+
+    public class FutureDateAttribute : ValidationAttribute
+    {
+         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            DateTime bday = Convert.ToDateTime(value);
+            DateTime currentDate = DateTime.Now;
+            if(bday>currentDate)
+            {
+                return new ValidationResult("Not a valid birthday");
+            }
+            return ValidationResult.Success;
+        }
     }
 }
