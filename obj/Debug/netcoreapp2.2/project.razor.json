@@ -2943,6 +2943,11 @@
   "RootNamespace": "formSub",
   "Documents": [
     {
+      "FilePath": "Views/Home/Success.cshtml",
+      "TargetPath": "Views/Home/Success.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Home/Privacy.cshtml",
       "TargetPath": "Views/Home/Privacy.cshtml",
       "FileKind": "mvc"

@@ -28,3 +28,4 @@
 /Users/stevenchung/Documents/coding_dojo/c#_stack/II_asp_mvc/formSub/obj/Debug/netcoreapp2.2/formSub.dll
 /Users/stevenchung/Documents/coding_dojo/c#_stack/II_asp_mvc/formSub/obj/Debug/netcoreapp2.2/formSub.pdb
 /Users/stevenchung/Documents/coding_dojo/c#_stack/II_asp_mvc/formSub/obj/Debug/netcoreapp2.2/formSub.csproj.CopyComplete
+/Users/stevenchung/Documents/coding_dojo/c#_stack/II_asp_mvc/formSub/obj/Debug/netcoreapp2.2/Razor/Views/Home/Success.g.cshtml.cs

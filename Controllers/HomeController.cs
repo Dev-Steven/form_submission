@@ -16,5 +16,23 @@ namespace formSub.Controllers
             return View();
         }
 
+        [HttpPost("create")]
+        public IActionResult Create(User user)
+        {
+            if(ModelState.IsValid)
+            {
+                return RedirectToAction("Success");
+            }
+            else
+            {
+                return View("Index");
+            }
+        }
+
+        public IActionResult Success()
+        {
+            return View("Success");
+        }
+
     }
 }
